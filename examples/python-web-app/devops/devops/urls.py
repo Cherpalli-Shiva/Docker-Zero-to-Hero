@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from django.http import HttpResponse
+from demo.views import home 
 
 urlpatterns = [
     path('', home, name='home'),  # Add this line to handle root URL
