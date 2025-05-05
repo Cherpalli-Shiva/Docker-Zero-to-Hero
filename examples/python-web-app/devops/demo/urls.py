@@ -1,7 +1,4 @@
-from django.urls import path
+from django.urls import HttpResponse
 
-from . import views
-
-urlpatterns = [
-    path('', views.index, name='index'),
-]
+def home(request):
+    return HttpResponse("Hello, This is the homepage!")
