@@ -1,4 +1,6 @@
-from django.urls import HttpResponse
+from django.urls import path
+from . import views
 
-def home(request):
-    return HttpResponse("Hello, This is the homepage!")
+urlpatterns = [
+    path('', views.index, name='index'),
+]
